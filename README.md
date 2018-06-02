@@ -1,2 +1,14 @@
 # textmate-scheme-support
 Scheme language support (R7RS+/#F) for TextMate-based editors (Sublime, VS Code, ...)
+
+## Colorizer (scheme.tmLanguage) 
+Mostly follows R7RS syntax definitions, with some extensions:
+- additional definition and syntax keywords from earlier standards and #F
+- support for #& box syntax
+
+Known colorizer problems (most probably cannot be easily fixed):
+- colorizer gets confused by datum prefixes such as `` ` ' , ,@ #& `` if the datum that follows is separated by newlines or comments
+- definition coloring can be easily fooled by newlines and/or comments in the first two sub-forms
+- `#;` comments use relaxed grammar and may be colored incorrectly in some corner cases
+- coloring of backquoted expressions is not very robust; it fails if double-nested (e.g.`` `(a `(b ,,c ',,d) e)) `` or if full forms like `(unquote x)` are used. Reasonable forms from real code are colored reasonably well.
+- generally, grammar is relaxed in many places, so some syntax errors won't look like errors (e.g. cons dot can be misplaced).
