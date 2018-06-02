@@ -3,7 +3,7 @@ Scheme language support (R7RS+/#F) for TextMate-based editors (Sublime, VS Code,
 
 ## Colorizer (scheme.tmLanguage) 
 Mostly follows R7RS syntax definitions, with some extensions:
-- additional definition and syntax keywords from earlier standards and #F
+- additional definition and syntax keywords from earlier standards and [#F](https://github.com/false-schemers/sharpF "#F - A Minimalistic Scheme System")
 - support for `#&` box syntax
 
 Known colorizer problems (most probably cannot be easily fixed):
@@ -14,5 +14,5 @@ Known colorizer problems (most probably cannot be easily fixed):
 - generally, grammar is relaxed in many places, so some syntax errors won't look like errors (e.g. cons dot can be misplaced).
 
 ## Screenshots
-![](https://github.com/false-schemers/textmate-scheme-support/blob/master/images/screenshot1.png)
-![](https://github.com/false-schemers/textmate-scheme-support/blob/master/images/screenshot2.png)
+![](https://raw.githubusercontent.com/false-schemers/textmate-scheme-support/master/images/screenshot1.png)
+![](https://raw.githubusercontent.com/false-schemers/textmate-scheme-support/master/images/screenshot2.png)
