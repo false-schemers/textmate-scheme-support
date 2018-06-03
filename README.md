@@ -13,6 +13,13 @@ Known colorizer problems (most probably cannot be easily fixed):
 - coloring of backquoted expressions is not very robust; it fails if double-nested (e.g.`` `(a `(b ,,c ',,d) e)) `` or if full forms like `(unquote x)` are used. Reasonable forms from real code are colored reasonably well.
 - generally, grammar is relaxed in many places, so some syntax errors won't look like errors (e.g. cons dot can be misplaced).
 
+## Color Theme (schemeLight.tmTheme)
+Derived from Visual Studio Light theme, with the following modifications:
+- more subdued colors
+- context-sensitive coloring of character escapes ("in string" vs. |in symbol| vs. standalone)
+- `#f` and `#t` colored differently (red/green)
+- introduced definitions are shown in **bold**
+
 ## Screenshots
 ![](https://raw.githubusercontent.com/false-schemers/textmate-scheme-support/master/images/screenshot1.png)
 ![](https://raw.githubusercontent.com/false-schemers/textmate-scheme-support/master/images/screenshot2.png)
