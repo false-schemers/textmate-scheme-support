@@ -20,6 +20,12 @@ Derived from Visual Studio Light theme, with the following modifications:
 - `#f` and `#t` colored differently (red/green)
 - introduced definitions are shown in **bold**
 
+## Sublime Text 3 Installation
+1. Download the `scheme.tmLanguage` and `schemeLight.tmTheme` files from GitHub.
+1. In Sublime Text, open the Command Palette (`Ctrl+Shift+P` on Windows/Linux; `⇧⌘P` on OSX) and choose _Browse Packages_.
+1. Place the `scheme.tmLanguage` and `schemeLight.tmTheme` files in the `Packages` directory.
+1. Update the `color_scheme` setting in your User Preferences to the path of the new theme (i.e. `"Packages/schemeLight.tmTheme"`).
+
 ## Screenshots
 ![](https://raw.githubusercontent.com/false-schemers/textmate-scheme-support/master/images/screenshot1.png)
 ![](https://raw.githubusercontent.com/false-schemers/textmate-scheme-support/master/images/screenshot2.png)
